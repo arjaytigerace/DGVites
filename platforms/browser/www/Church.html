@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+  </head>
+  <body class="theme-dark">
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="back link">
+                    <i class="icon f7-icons icon-back color-yellow"></i>
+                        <span class="text-color-yellow">Back</span>
+                    </a>
+                </div>
+              <div class="title text-color-yellow">Church</div>
+            </div>
+          </div>
+
+          <!-- Toolbar -->
+          <!--<div class="toolbar">
+            <div class="toolbar-inner">-->
+              <!-- Toolbar links -->
+              <!--<a href="#" class="link">Link 1</a>
+              <a href="#" class="link">Link 2</a>
+            </div>
+          </div>-->
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+            <div class="block-title">Church Timeline</div>
+            <div class="timeline timeline-sides">
+              <div class="timeline-item">
+                <div class="timeline-item-date">10:00 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Procession</div>
+                    <div class="card-footer">Walking down the Isle</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">10:30 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Officiant's Opening Remarks</div>
+                    <div class="card-footer">Opening Message</div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-item-date">10:40 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Officiant Addresses the Couple</div>
+                    <div class="card-footer">Significance of the Vows, Duties and Roles in Marriage</div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-item-date">10:50 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Exchange of Vows</div>
+                    <div class="card-footer">Promises to each other</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">11:00 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Ring Exchange</div>
+                    <div class="card-footer">Exchanging of rings</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">11:05 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Pronouncement of Marriage</div>
+                    <div class="card-footer">The Official Announcement</div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-item-date">11:10 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Kiss</div>
+                    <div class="card-footer">First Kiss of the Married Couple</div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-item-date">11:20 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Closing Remarks</div>
+                    <div class="card-footer">Closing Message</div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-item-date">11:50 <small>AM</small></div>
+                <div class="timeline-item-divider"></div>
+                <div class="timeline-item-content card">
+                    <div class="card-header text-color-yellow">The Recessional</div>
+                    <div class="card-footer">Walking down the aisle as newlywed</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
+
+
+
+ <!-- <ul>
+                  <li>
+                    <a href="#" class="item-link link popup-open" data-popup=".ironman">
+                        <div class="item-content">
+                            <div class="item-media"><img src="imgs/ironman.png" width="80"/></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Ironman</div>
+                                    </div>
+                                <div class="item-subtitle">Avenger</div>
+                            </div>
+                        </div>      
+                    </a>
+                </li>
+
+                <div class="popup ironman">
+                    <div class="block">
+                      <h1 style="text-align:center;">Ironman</h1>
+                      <div><img src="imgs/ironman.png" width="80" class="center"/></div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan metus et metus malesuada, sit amet porta est consectetur. Donec sodales molestie nisl ut faucibus. Etiam a nisi nibh. Quisque dictum leo dui, non congue dui sagittis eget. Aenean laoreet condimentum rutrum. Proin lacinia nulla metus, at posuere sapien tempus at. In ligula massa, blandit sed ligula a, varius iaculis velit.</p>
+                     
+                      <p><a class="link popup-close" href="#">Close popup</a></p>
+                      
+                    </div>
+                </div>
+                      
+                <li>
+                    <a href="#" class="item-link link popup-open" data-popup=".superman">
+                        <div class="item-content">
+                            <div class="item-media"><img src="imgs/Superman.png" width="80"/></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Superman</div>
+                                    </div>
+                                <div class="item-subtitle">Justice League</div>
+                            </div>
+                        </div>      
+                    </a>
+                </li>
+    
+                <div class="popup superman">
+                    <div class="block">
+                      <h1 style="text-align:center;">Superman</h1>
+                      <div><img src="imgs/Superman.png" width="80" class="center"/></div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan metus et metus malesuada, sit amet porta est consectetur. Donec sodales molestie nisl ut faucibus. Etiam a nisi nibh. Quisque dictum leo dui, non congue dui sagittis eget. Aenean laoreet condimentum rutrum. Proin lacinia nulla metus, at posuere sapien tempus at. In ligula massa, blandit sed ligula a, varius iaculis velit.</p>
+                    
+                      <p><a class="link popup-close" href="#">Close popup</a></p>  
+                    </div>
+                </div>
+
+
+                <li>
+                    <a href="#" class="item-link link popup-open" data-popup=".ryu">
+                        <div class="item-content">
+                            <div class="item-media"><img src="imgs/ryu.png" width="80"/></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Ryu</div>
+                                    </div>
+                                <div class="item-subtitle">Street Fighter</div>
+                            </div>
+                        </div>      
+                    </a>
+                </li>
+        
+                <div class="popup ryu">
+                    <div class="block">
+                      <h1 style="text-align:center;">Ryu</h1>
+                      <div><img src="imgs/ryu.png" width="80" class="center"/></div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan metus et metus malesuada, sit amet porta est consectetur. Donec sodales molestie nisl ut faucibus. Etiam a nisi nibh. Quisque dictum leo dui, non congue dui sagittis eget. Aenean laoreet condimentum rutrum. Proin lacinia nulla metus, at posuere sapien tempus at. In ligula massa, blandit sed ligula a, varius iaculis velit.</p>
+                 
+                      <p><a class="link popup-close" href="#">Close popup</a></p>
+                      
+                    </div>
+                </div>
+                        
+                <li>
+                    <a href="#" class="item-link link popup-open" data-popup=".jin">
+                        <div class="item-content">
+                            <div class="item-media"><img src="imgs/jin.jpg" width="80"/></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Jin Kazama</div>
+                                    </div>
+                                <div class="item-subtitle">Tekken</div>
+                            </div>
+                        </div>      
+                    </a>
+                </li>
+            
+                <div class="popup jin">
+                    <div class="block">
+                      <h1 style="text-align:center;">Jin Kazama</h1>
+                      <div><img src="imgs/jin.jpg" width="80" class="center"/></div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan metus et metus malesuada, sit amet porta est consectetur. Donec sodales molestie nisl ut faucibus. Etiam a nisi nibh. Quisque dictum leo dui, non congue dui sagittis eget. Aenean laoreet condimentum rutrum. Proin lacinia nulla metus, at posuere sapien tempus at. In ligula massa, blandit sed ligula a, varius iaculis velit.</p>
+                    
+                      <p><a class="link popup-close" href="#">Close popup</a></p>
+                      
+                    </div>
+                </div>
+
+                <li>
+                    <a href="#" class="item-link link popup-open" data-popup=".goku">
+                        <div class="item-content">
+                            <div class="item-media"><img src="imgs/goku.png" width="80"/></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Son Goku</div>
+                                    </div>
+                                <div class="item-subtitle">Dragon Ball</div>
+                            </div>
+                        </div>      
+                    </a>
+                </li>
+                
+                <div class="popup goku">
+                    <div class="block">
+                      <h1 style="text-align:center;">Son Goku</h1>
+                      <div><img src="imgs/goku.png" width="80" class="center"/></div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan metus et metus malesuada, sit amet porta est consectetur. Donec sodales molestie nisl ut faucibus. Etiam a nisi nibh. Quisque dictum leo dui, non congue dui sagittis eget. Aenean laoreet condimentum rutrum. Proin lacinia nulla metus, at posuere sapien tempus at. In ligula massa, blandit sed ligula a, varius iaculis velit.</p>
+                   
+                      <p><a class="link popup-close" href="#">Close popup</a></p>
+                      
+                    </div>
+                </div>
+                </ul> -->

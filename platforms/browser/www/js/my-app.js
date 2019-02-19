@@ -12,45 +12,59 @@ var app = new Framework7({
     // Add default routes
     routes: [
       {
+        path: '/list/',
+        url: 'list.html',
+      },
+
+      {
+        path: '/wedcouple/',
+        url: 'Wedcouple.html',
+      },
+
+      {
+        path: '/entourage/',
+        url: 'Entourage.html',
+      },
+
+      {
+        path: '/sequence/',
+        url: 'Sequence.html',
+      },
+
+      {
+        path: '/clothing/',
+        url: 'Clothing.html',
+      },
+
+      {
+        path: '/location/',
+        url: 'Location.html',
+      },
+
+      {
+        path: '/menu/',
+        url: 'Menu.html',
+      },
+        {
+        path: '/test/',
+        url: 'test.html',
+      },       
+      {
+        path: '/church/',
+        url: 'Church.html',
+      },
+
+      {
+        path: '/reception/',
+        url: 'Reception.html',
+      },
+        {
         path: '/about/',
         url: 'about.html',
       },
-      {
-        path: '/adobo/',
-        url: 'adobo.html',
-      },
-      {
-        path: '/afritada/',
-        url: 'afritada.html',
-      },
-      {
-        path: '/bulalo/',
-        url: 'bulalo.html',
-      },
-      {
-        path: '/kinilaw/',
-        url: 'kinilaw.html',
-      },
-      {
-        path: '/sisig/',
-        url: 'sisig.html',
-      },
-      {
-        path: '/tinola/',
-        url: 'tinola.html',
-      },
-      {
-        path: '/directions/',
-        url: 'directions.html',
-      },
-      {
-        path: '/menu/',
-        url: 'menu.html',
-      },
-
     ],
     // ... other parameters
-    theme:"auto"
+    theme: 'auto'
   });
   
   var mainView = app.views.create('.view-main');
