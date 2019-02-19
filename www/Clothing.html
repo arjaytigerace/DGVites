@@ -1,0 +1,114 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .demo-swiper .swiper-slide {
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            background: #fff;
+        }
+    </style>
+  </head>
+  <body>
+ <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+  
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+          <!-- Initial Page, "data-name" contains page name -->
+          <div data-name="home" class="page">
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner sliding">
+        <div class="left">
+             <a href="#" class="back link">
+                <i class="icon f7-icons color-yellow icon-back"></i>
+                <span class="text-color-yellow">Back</span>
+            </a>
+        </div>
+        <div class="title text-color-yellow">Clothing</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="pages">
+    <div data-page="about" class="page">
+        <div class="page-content">
+            <div class="toolbar tabbar">
+            <div class="toolbar-inner">
+                <a href="#gentlemen" class="tab-link tab-link-active color-yellow">For Gentlemen</a>
+                <a href="#ladies" class="tab-link">For Ladies</a>
+            </div>
+            </div>
+            <div class="tabs-animated-wrap">
+              <div class="tabs">
+                <div id="gentlemen" class="page-content tab tab-active">
+                  <div class="block">
+                        <div class="card">
+                            <div class="card-content card-content-padding" >Black Suit and Gold Tie</div>
+                        </div>
+                        <div class="swiper-container swiper-init demo-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                               <div class="card">
+                                    <div class="card-content card-content-padding" ><img src="imgs/suitformen.jpg" width="100%"></div>
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card-content card-content-padding" ><img src="imgs/suitformen2.jpg" width="100%" height="440"></div>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="ladies" class="page-content tab">
+                  <div class="block">
+                     <div class="card">
+                            <div class="card-content card-content-padding" >Black and Gold Dress</div>
+                        </div>
+                        <div class="swiper-container swiper-init demo-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                               <div class="card">
+                                    <div class="card-content card-content-padding" ><img src="imgs/dress.jpg" width="100%"></div>
+                                </div>
+                          </div>
+                          <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="card-content card-content-padding" ><img src="imgs/dress2.jpg" width="100%"></div>
+                                </div>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+ <!-- Path to Framework7 Library JS-->
+ <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+ <!-- Path to your app js-->
+ <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+  </html>

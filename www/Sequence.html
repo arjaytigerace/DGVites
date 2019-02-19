@@ -1,0 +1,84 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+
+   
+  </head>
+  <body>
+ <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+  
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+          <!-- Initial Page, "data-name" contains page name -->
+          <div data-name="home" class="page">
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+            <i class="icon f7-icons icon-back color-yellow"></i>
+                <span class="text-color-yellow">Back</span>
+            </a>
+        </div>
+        <div class="title text-color-yellow">Program Flow</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="about" class="page">
+        <div class="page-content">
+            <div class="list media-list">
+                <ul>
+                    <li>
+                      <a href="/church/" class="item-link item-content">
+                        <div class="item-media"><img src="imgs/church.png" width="80" height="80"/></div>
+                        <div class="item-inner">
+                          <div class="item-title-row">
+                            <div class="item-title">Church</div>
+                            <div class="item-after"></div>
+                          </div>
+                          <div class="item-text">Sequence of the wedding at the church</div>
+                        </div>
+                    </a>
+                    </li>
+
+                    <li>
+                      <a href="/reception/" class="item-link item-content">
+                        <div class="item-media"><img src="imgs/reception.png" width="80" height="80"/></div>
+                        <div class="item-inner">
+                          <div class="item-title-row">
+                            <div class="item-title">Reception</div>
+                            <div class="item-after"></div>
+                          </div>
+                          <div class="item-text">Sequence of the wedding at the reception</div>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+           </div>
+        </div>
+    </div>
+</div>
+ <!-- Path to Framework7 Library JS-->
+ <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+ <!-- Path to your app js-->
+ <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+  </html>

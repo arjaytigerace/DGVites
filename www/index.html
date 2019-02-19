@@ -1,410 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
 
-<head>
-  <!-- Required meta tags-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <!-- Color theme for statusbar -->
-  <meta name="theme-color" content="#2196f3">
-  <!-- Your app title -->
-  <title>My App</title>
-  <!-- Path to Framework7 Library CSS -->
-  <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
-  <!-- Path to your custom app styles-->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/app.css">
 
-<body>
-  <!-- App root element -->
-  <div id="app">
-    <!-- Statusbar overlay -->
-    <div class="statusbar"></div>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .imgback{
+           background-image:    url();
+          background-size:     cover;  
+          background-repeat:   no-repeat;
+          background-position: center center;  
+        }
+        body{
+          text-shadow: 2px 2px 4px#000000;
+        }
+    </style>
+  </head>
+  <body class="theme-dark">
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
 
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main">
-      <!-- Initial Page, "data-name" contains page name -->
-      <div data-name="home" class="page">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
 
-        <!-- Top Navbar -->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="title">DGVites</div>
+          <!-- Top Navbar -->
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="title text-color-yellow">DGVites</div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content">
+<!--            <a href="/list/"><img src="imgs/invitation.png" width="100%" height="100%"></a>-->
+            <!-- Link to another page -->
+              <a href="/list/">
+                <img src="imgs/engaged!.png" width="100%" style="height:100%;background-size:contain;background-repeat:no-repeat;background-position: center center;" />        
+              </a>
           </div>
         </div>
-
-        <!-- Toolbar -->
-        <div class="toolbar">
-          <div class="toolbar-inner">
-            <!-- Toolbar links -->
-            <!-- <a href="#" class="link">Link 1</a>
-            <a href="#" class="link">Link 2</a> -->
-          </div>
-        </div>
-
-        
-        <div class="page-content">
-            <div class="list media-list">
-                <ul>
-                  <li>
-                    <a href="/adobo/" class="item-link item-content">
-                      <div class="item-media"><img src="images/adobo.jpg" width="80"/></div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Wedding Couple</div>
-                          <div class="item-after">₱80</div>
-                        </div>
-                        <div class="item-subtitle">Main Course</div>
-                        <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                      </div></a>
-                    </li>
-                    <li>
-                        <a href="/afritada/" class="item-link item-content">
-                          <div class="item-media"><img src="images/afritada.jpg" width="80"/></div>
-                          <div class="item-inner">
-                            <div class="item-title-row">
-                              <div class="item-title">Groom's Men</div>
-                              <div class="item-after">₱85</div>
-                            </div>
-                            <div class="item-subtitle">Main Course</div>
-                            <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                          </div></a>
-                        </li>
-                        <li>
-                            <a href="/bulalo/" class="item-link item-content">
-                              <div class="item-media"><img src="images/bulalo.jpg" width="80"/></div>
-                              <div class="item-inner">
-                                <div class="item-title-row">
-                                  <div class="item-title">Bride's Maid</div>
-                                  <div class="item-after">₱110</div>
-                                </div>
-                                <div class="item-subtitle">Main Course</div>
-                                <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                              </div></a>
-                            </li>
-                            <li>
-                                <a href="/kinilaw/" class="item-link item-content">
-                                  <div class="item-media"><img src="images/kinilaw.jpg" width="80"/></div>
-                                  <div class="item-inner">
-                                    <div class="item-title-row">
-                                      <div class="item-title">God Parents</div>
-                                      <div class="item-after">₱95</div>
-                                    </div>
-                                    <div class="item-subtitle">Lorem</div>
-                                    <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                                  </div></a>
-                                </li>
-                                <li>
-                                    <a href="/sisig/" class="item-link item-content">
-                                      <div class="item-media"><img src="images/sisig.jpg" width="80"/></div>
-                                      <div class="item-inner">
-                                        <div class="item-title-row">
-                                          <div class="item-title">Event Schedule</div>
-                                          <div class="item-after">₱70</div>
-                                        </div>
-                                        <div class="item-subtitle">Main Course / Snack</div>
-                                        <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                                      </div></a>
-                                    </li>
-                                    <li>
-                                        <a href="/tinola/" class="item-link item-content">
-                                          <div class="item-media"><img src="images/tinola.jpg" width="80"/></div>
-                                          <div class="item-inner">
-                                            <div class="item-title-row">
-                                              <div class="item-title">Recommended Clothing</div>
-                                              <div class="item-after">₱90</div>
-                                            </div>
-                                            <div class="item-subtitle">Main Course</div>
-                                            <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                                          </div></a>
-                                        </li>
-                                        <li>
-                                          <a href="/directions/" class="item-link item-content">
-                                            <div class="item-media"><img src="images/tinola.jpg" width="80"/></div>
-                                            <div class="item-inner">
-                                              <div class="item-title-row">
-                                                <div class="item-title">Directions to Event</div>
-                                                <div class="item-after">₱90</div>
-                                              </div>
-                                              <div class="item-subtitle">Main Course</div>
-                                              <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                                            </div></a>
-                                          </li>
-                                          <li>
-                                            <a href="/menu/" class="item-link item-content">
-                                              <div class="item-media"><img src="images/tinola.jpg" width="80"/></div>
-                                              <div class="item-inner">
-                                                <div class="item-title-row">
-                                                  <div class="item-title">Wedding Menu</div>
-                                                  <div class="item-after">₱90</div>
-                                                </div>
-                                                <div class="item-subtitle">Main Course</div>
-                                                <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                                              </div></a>
-                                            </li>
-                 
-                </ul>
-              </div>
-            <!-- <div class="list media-list">
-                <ul>
-                  <li>
-                    <a href="#" class="item-link item-content">
-                      <div class="item-media"><img src="http://lorempixel.com/160/160/people/1" width="80"/></div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Yellow Submarine</div>
-                          <div class="item-after">$15</div>
-                        </div>
-                        <div class="item-subtitle">Beatles</div>
-                        <div class="item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis tellus ut turpis condimentum, ut dignissim lacus tincidunt. Cras dolor metus, ultrices condimentum sodales sit amet, pharetra sodales eros. Phasellus vel felis tellus. Mauris rutrum ligula nec dapibus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div> -->
-
-
-          <!--<div class="list media-list">
-            <ul>
-              <li>
-                <a class="item-link link popup-open" data-popup=".pop1">
-                  <div class="item-content">
-                    <div class="item-media">
-                      <img src="https://uploads.disquscdn.com/images/918361f2f09c7d91e1f158c3ebe127b55def7479eb2fdc8c5ab0c0bd7ef3071f.jpg?w=600&h=860" width="44" />
-                    </div>
-                    <div class="item-inner">
-                      <div class="item-title-row">
-                        <div class="item-title">Jihyo</div>
-                      </div>
-                      <div class="item-subtitle">Leader, Main Vocalist</div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <div class="popup pop1">
-                  <div class="block">
-                    <h1>Jihyo</h1>
-                  
-                    <p><a class="link popup-close" href="#">Close popup</a></p>
-                    <img src="https://uploads.disquscdn.com/images/918361f2f09c7d91e1f158c3ebe127b55def7479eb2fdc8c5ab0c0bd7ef3071f.jpg?w=600&h=860" width="350" height="500" />
-                  </div>
-                </div>
-              <li>
-                  <a class="item-link link popup-open" data-popup=".pop2">
-                    <select name="members">
-                    </select>
-                    <div class="item-content">
-                      <div class="item-media">
-                        <img src="https://uploads.disquscdn.com/images/27b3bf4ae370cb96c3d86742d45d568cb56a1ae3dcd0a9141f79492d6d47c476.jpg?w=600&h=932" width="44" />
-                      </div>
-                      <div class="item-inner">
-                        <div class="item-title-row">
-                          <div class="item-title">Nayeon</div>
-                        </div>
-                        <div class="item-subtitle">Lead Vocalist, Lead Dancer, Center</div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <div class="popup pop2">
-                    <div class="block">
-                      <h1>Nayeon</h1>
-                       
-                      <p><a class="link popup-close" href="#">Close popup</a></p>
-                      <img src="https://uploads.disquscdn.com/images/27b3bf4ae370cb96c3d86742d45d568cb56a1ae3dcd0a9141f79492d6d47c476.jpg?w=600&h=932" width="350" height="500" />
-                    </div>
-                  </div>
-                <li>
-                    <a class="item-link link popup-open" data-popup=".pop3">
-                      <select name="members">
-                      </select>
-                      <div class="item-content">
-                        <div class="item-media">
-                          <img src="https://uploads.disquscdn.com/images/a8074ffa42601a4d4f4a22aace4413d562742cfd4319df2b2f859f43eb385e3d.jpg?w=600&h=932" width="44" />
-                        </div>
-                        <div class="item-inner">
-                          <div class="item-title-row">
-                            <div class="item-title">Jeongyeon</div>
-                          </div>
-                          <div class="item-subtitle">Lead Vocalist</div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <div class="popup pop3">
-                      <div class="block">
-                        <h1>Jeongyeon</h1>
-                         
-                        <p><a class="link popup-close" href="#">Close popup</a></p>
-                        <img src="https://uploads.disquscdn.com/images/a8074ffa42601a4d4f4a22aace4413d562742cfd4319df2b2f859f43eb385e3d.jpg?w=600&h=932" width="350" height="500" />
-                      </div>
-                    </div>
-                  <li>
-                      <a class="item-link link popup-open" data-popup=".pop4">
-                        <select name="members">
-                        </select>
-                        <div class="item-content">
-                          <div class="item-media">
-                            <img src="https://uploads.disquscdn.com/images/2e88d26b4c9e07775d9edf5f2f67e59a14d1890d81760b016276d249c45f6c75.jpg?w=600&h=1004" width="44" />
-                          </div>
-                          <div class="item-inner">
-                            <div class="item-title-row">
-                              <div class="item-title">Momo</div>
-                            </div>
-                            <div class="item-subtitle">Main Dancer, Vocalist, Rapper</div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <div class="popup pop4">
-                        <div class="block">
-                          <h1>Momo</h1>
-                           
-                          <p><a class="link popup-close" href="#">Close popup</a></p>
-                          <img src="https://uploads.disquscdn.com/images/2e88d26b4c9e07775d9edf5f2f67e59a14d1890d81760b016276d249c45f6c75.jpg?w=600&h=1004" width="350" height="500" />
-                        </div>
-                      </div>
-                    <li>
-                        <a class="item-link link popup-open" data-popup=".pop5">
-                          <select name="members">
-                          </select>
-                          <div class="item-content">
-                            <div class="item-media">
-                              <img src="https://uploads.disquscdn.com/images/5ec4b3d6b02dc0208c613b00313063442dc216974f4d6211cc1b6caeee1be9c0.jpg?w=600&h=860" width="44" />
-                            </div>
-                            <div class="item-inner">
-                              <div class="item-title-row">
-                                <div class="item-title">Sana</div>
-                              </div>
-                              <div class="item-subtitle">Vocalist</div>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <div class="popup pop5">
-                          <div class="block">
-                            <h1>Sana</h1>
-                             
-                            <p><a class="link popup-close" href="#">Close popup</a></p>
-                            <img src="https://uploads.disquscdn.com/images/5ec4b3d6b02dc0208c613b00313063442dc216974f4d6211cc1b6caeee1be9c0.jpg?w=600&h=860" width="350" height="500" />
-                          </div>
-                        </div>
-                      <li>
-                          <a class="item-link link popup-open" data-popup=".pop6">
-                            <select name="members">
-                            </select>
-                            <div class="item-content">
-                              <div class="item-media">
-                                <img src="https://uploads.disquscdn.com/images/bc430094f9a056be6d1bc3095f7f0b4d9e27e36448dac29d1719608abcfc9076.jpg?w=600&h=860" width="44" />
-                              </div>
-                              <div class="item-inner">
-                                <div class="item-title-row">
-                                  <div class="item-title">Mina</div>
-                                </div>
-                                <div class="item-subtitle">Main Dancer, Vocalist</div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <div class="popup pop6">
-                            <div class="block">
-                              <h1>Mina</h1>
-                               
-                              <p><a class="link popup-close" href="#">Close popup</a></p>
-                              <img src="https://uploads.disquscdn.com/images/bc430094f9a056be6d1bc3095f7f0b4d9e27e36448dac29d1719608abcfc9076.jpg?w=600&h=860" width="350" height="500" />
-                            </div>
-                          </div>
-                        <li>
-                            <a class="item-link link popup-open" data-popup=".pop7">
-                              <select name="members">
-                              </select>
-                              <div class="item-content">
-                                <div class="item-media">
-                                  <img src="https://uploads.disquscdn.com/images/b0da05db5aa8b8609c995c6751443fce56c712982d8d7f78bf567ee4480f22cf.jpg?w=600&h=860" width="44" />
-                                </div>
-                                <div class="item-inner">
-                                  <div class="item-title-row">
-                                    <div class="item-title">Dahyun</div>
-                                  </div>
-                                  <div class="item-subtitle">Lead Rapper, Vocalist</div>
-                                </div>
-                              </div>
-                            </a>
-                          </li>
-                          <div class="popup pop7">
-                              <div class="block">
-                                <h1>Dahyun</h1>
-                                 
-                                <p><a class="link popup-close" href="#">Close popup</a></p>
-                                <img src="https://uploads.disquscdn.com/images/b0da05db5aa8b8609c995c6751443fce56c712982d8d7f78bf567ee4480f22cf.jpg?w=600&h=860" width="350" height="500" />
-                              </div>
-                            </div>
-                          <li>
-                              <a class="item-link link popup-open" data-popup=".pop8">
-                                <select name="members">
-                                </select>
-                                <div class="item-content">
-                                  <div class="item-media">
-                                    <img src="https://uploads.disquscdn.com/images/f72ddb852b02c2fc849c857ea5ff652abeb76e921e8cd8a0e9874c201ff889ea.jpg?w=800&h=528" width="44" />
-                                  </div>
-                                  <div class="item-inner">
-                                    <div class="item-title-row">
-                                      <div class="item-title">Chaeyoung</div>
-                                    </div>
-                                    <div class="item-subtitle">Main Rapper, Vocalist</div>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                            <div class="popup pop8">
-                                <div class="block">
-                                  <h1>Chaeyoung</h1>
-                                   
-                                  <p><a class="link popup-close" href="#">Close popup</a></p>
-                                  <img src="https://uploads.disquscdn.com/images/f72ddb852b02c2fc849c857ea5ff652abeb76e921e8cd8a0e9874c201ff889ea.jpg?w=800&h=528" width="350" height="400" />
-                                </div>
-                              </div>
-                            <li>
-                                <a class="item-link link popup-open" data-popup=".pop9">
-                                  <select name="members">
-                                  </select>
-                                  <div class="item-content">
-                                    <div class="item-media">
-                                      <img src="https://uploads.disquscdn.com/images/d0188627b72102148cbe38a7125785678b1df312daaf88f070685a9286c58a2d.jpg?w=600&h=860" width="44" />
-                                    </div>
-                                    <div class="item-inner">
-                                      <div class="item-title-row">
-                                        <div class="item-title">Tzuyu</div>
-                                      </div>
-                                      <div class="item-subtitle">Lead Dancer, Vocalist, Visual, Maknae</div>
-                                    </div>
-                                  </div>
-                                </a>
-                              </li>
-                              <div class="popup pop9">
-                                  <div class="block">
-                                    <h1>Tzuyu</h1>
-                                     
-                                    <p><a class="link popup-close" href="#">Close popup</a></p>
-                                    <img src="https://uploads.disquscdn.com/images/d0188627b72102148cbe38a7125785678b1df312daaf88f070685a9286c58a2d.jpg?w=600&h=860" width="350" height="500" />
-                                  </div>
-                                </div>
-            </ul>
-          </div>-->
-<!-- Link to another page -->
-<a href="/about/">About app</a>
-        </div>
-
-        
       </div>
     </div>
-  </div>
-  </div>
-  <!-- Path to Framework7 Library JS-->
-  <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-  <!-- Path to your app js-->
-  <script type="text/javascript" src="js/my-app.js"></script>
-</body>
-
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
 </html>
